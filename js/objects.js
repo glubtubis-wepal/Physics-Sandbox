@@ -1,12 +1,12 @@
-const objects = [];
+// objects.js
+window.objects = [];
 
-function createBall(x, y) {
+window.createBall = function (x, y) {
   objects.push({
-    x,
-    y,
-    vx: 0,
-    vy: 0,
+    x: x,
+    y: y,
     r: 15,
-    mass: 1
+    vx: 0,
+    vy: 0
   });
-}
+};
